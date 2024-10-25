@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
 #loginPage {
     background-image: url('../../public/login_background.png');
     background-size: cover;
@@ -32,6 +38,35 @@
     top:45%;
     height: 50%;
     width: 25%;
+}
+/* .jobHistoryHeight {
+    height: 100%;
+} */
+
+/* #jobHistorySection {
+    height: 100vh;
+    overflow: hidden;
+} */
+
+#tableDiv {
+    height: 17.31rem;
+}
+
+#tableBody {
+    height: 20px;
+    overflow: hidden;
+}
+
+#historyPekoCrew {
+    height: 80vh;
+    overflow: hidden;
+      
+}
+
+#historyPekoCrew img {
+    height: 50%;
+
+
 }
 
 #happyPekoLongEarsLookingUp{
