@@ -14,6 +14,7 @@ function SetGoal() {
       },
       body: JSON.stringify({ weeklyGoal })
     })
+    e.target.elements['setGoalInput'].value = '';
     console.log('response status', response.status)
     const result = await response.json()
     console.log('response result', result)
@@ -26,10 +27,11 @@ function SetGoal() {
       <form onSubmit={handleSubmit} className='rounded bg-white p-6 shadow-md'>
         <div className='flex space-x-4'>
           <input
-            type='number'
+            name='setGoalInput'
+            type='text'
             value={weeklyGoal}
             onChange={e => setWeeklyGoal(e.target.value)}
-            placeholder='Enter Your Weekly Goal'
+            placeholder='Enter number of apps you want to submit this week'
             className='w-full rounded border border-gray-300 p-2'
             required
           />
