@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html, body {
     margin: 0;
     height: 100%;
@@ -137,6 +138,12 @@ html, body {
 
 }
 
+#happyPekoLookingUp {
+    position: relative;
+    height: 75%;
+    width: 75%;
+   
+}
 #happyPekoLongEarsLookingUp{
     position: absolute;
     top: 75%;

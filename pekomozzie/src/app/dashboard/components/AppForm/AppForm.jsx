@@ -11,7 +11,7 @@ const AppForm = ({ searchParams }) => {
       <div>
       <form className="flex flex-col items-center w-72 max-w-sm p-6 space-y-4">
         <div className="w-full">
-          <label htmlFor="company" className="block font-extrabold text-sm text-gray-700">Company:</label>
+          <label htmlFor="company" className="block text-sm font-medium text-gray-700">Company:</label>
           <input
             id="company"
             name="company"
@@ -23,7 +23,7 @@ const AppForm = ({ searchParams }) => {
         </div>
 
         <div className="w-full">
-          <label htmlFor="role" className="block font-extrabold text-sm text-gray-700">Role:</label>
+          <label htmlFor="role" className="block text-sm font-medium text-gray-700">Role:</label>
           <input
             id="role"
             name="role"
@@ -34,7 +34,7 @@ const AppForm = ({ searchParams }) => {
         </div>
 
         <div className="w-full">
-          <label htmlFor="notes" className="block font-extrabold text-sm text-gray-700">Notes:</label>
+          <label htmlFor="notes" className="block text-sm font-medium text-gray-700">Notes:</label>
           <input
             id="notes"
             name="notes"
@@ -48,7 +48,7 @@ const AppForm = ({ searchParams }) => {
           <button
             type="submit"
             formAction={feed}
-            className="flex justify-center w-full px-4 py-2 text-sm font-extrabold text-white bg-lime-600 border border-transparent rounded-md hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500"
+            className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-lime-600 border border-transparent rounded-md hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500"
           >
             FEED THE MONSTER
           </button>
