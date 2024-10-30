@@ -2,8 +2,9 @@ import SetGoal from './SetGoal'
 
 function SetGoalPage(){
     return (
-        <div>
+        <div id='goalPage' className="h-screen justify-center items-center">
             <SetGoal/>
+        
         </div>
     )
 }

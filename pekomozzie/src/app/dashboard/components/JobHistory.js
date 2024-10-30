@@ -39,21 +39,21 @@ export default function JobHistory() {
   },[search,historyData])
 
   return (
-    <div className='mx-auto max-w-4xl p-6'>
+    <div className='mx-auto p-6'>
       <h2 className='mb-6 text-center text-2xl font-bold'>Past Feasts</h2>
 
       <div className='mb-4'>
         <input
           type='text'
-          placeholder='Search anything here'
+          placeholder='Search app history here'
           value={search}
           onChange={e => setSearch(e.target.value)}
-          className='w-full rounded border border-gray-300 p-2'
+          className='w-full rounded border border-gray-500 p-2'
         />
       </div>
 
-      <div className='overflow-x-auto'>
-        <table className='min-w-full border overflow-scroll border-gray-200 text-left'>
+      <div id='tableDiv' className='overflow-x-auto rounded-t-2xl'>
+        <table className='min-w-full border border-gray-500 text-left'>
           <thead className='bg-blue-500'>
             <tr>
               <th className='px-6 py-3 text-white'>Date</th>
@@ -61,12 +61,12 @@ export default function JobHistory() {
               <th className='px-6 py-3 text-white'>Role</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id='tableBody' className='overflow-y-auto'>
             {filteredData.length > 0 ? (
               filteredData.map(item => (
                 <tr
                   key={item.created_at}
-                  className='border-b border-gray-200 hover:bg-gray-50'
+                  className='border-b border-gray-500 hover:bg-gray-50'
                 >
                   <td className='px-6 py-4'>
                     {new Date(item.created_at).toLocaleDateString()}
