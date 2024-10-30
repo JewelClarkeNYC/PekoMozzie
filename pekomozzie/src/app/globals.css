@@ -15,6 +15,12 @@ html, body {
 
 }
 
+#goalPage {
+    background-image: url('../../public/goalPageBackground.png');
+    background-size: cover;
+    background-position: center;
+}
+
 #hangryMeterTitle {
     position:relative;
     top: 2px;
