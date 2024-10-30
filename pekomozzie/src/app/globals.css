@@ -15,6 +15,12 @@ html, body {
 
 }
 
+#goalPage {
+    background-image: url('../../public/goalPageBackground.png');
+    background-size: cover;
+    background-position: center;
+}
+
 #hangryMeterTitle {
     position:relative;
     top: 2px;
@@ -28,25 +34,87 @@ html, body {
 
 }
 
+.red {
+    background: red;
+}
+
+.orange {
+    background:rgb(232, 113, 34);
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+}
+
 #appForm {
     left: 12%;
     bottom: 61.5%;
 }
 
-#happyPeko {
+#responsivePeko {
     position: absolute;
-    top:45%;
-    height: 50%;
-    width: 25%;
+    top:125%;
+    height: 250%;
+    width: 30%;
 }
-/* .jobHistoryHeight {
-    height: 100%;
-} */
 
-/* #jobHistorySection {
-    height: 100vh;
-    overflow: hidden;
-} */
+.bluePeko {
+    animation-name: bluePekoMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+}
+@keyframes bluePekoMove {
+    0%   {left:0px;}
+    25%  {left:200px;}
+    100% {left:0px;}
+}
+
+.greenPeko {
+    animation-name: greenPekoMove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+}
+@keyframes greenPekoMove {
+    0%   {left:0px;}
+    25%  {left:200px;}
+    100% {left:0px;}
+}
+
+.orangePeko {
+    animation-name: orangePekoMove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+}
+@keyframes orangePekoMove {
+    0%   {left:0px; transform: scale(1.25)}
+    25%  {left:200px;}
+    100% {left:0px;}
+}
+
+.redPeko {
+    animation-name: redPekoMove;
+    animation-duration: .75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+}
+@keyframes redPekoMove {
+    0%   {left:0px; transform: scale(2)}
+    25%  {left:200px;}
+    100% {left:0px;}
+}
+
+#stillCooking {
+    position: absolute;
+    top: 100%;
+    height: 325%;
+}
 
 #tableDiv {
     height: 17.31rem;
