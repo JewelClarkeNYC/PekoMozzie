@@ -21,7 +21,7 @@ export default function ResponsivePeko (props){
             pekoClass = 'redPeko';
         }   
         return (
-            <img id='responsivePeko' class={pekoClass} src={props.pekoColorPath} alt="Peko with corresponding color and animation to hungry level." />
+            <img id='responsivePeko' className={pekoClass} src={props.pekoColorPath} alt="Peko with corresponding color and animation to hungry level." />
         )            
     }
 }
